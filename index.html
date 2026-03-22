@@ -3,18 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <div class="titolo">
-  <title>Il Mio Sito Web</title>
-  </div>
+  <title>Portfolio di Thomas Odierna</title>
   <link rel="stylesheet" href="StileIndex.css">
 </head>
 <body>
-  <h1>Sito di Thomas Odierna</h1>
-  <nav>
-    <a href="pagine/Animali/Animali.html">Vai al modo degli animali</a>
-    <a href="pagine/Orario/orario.html">Vai all'orario scolastico</a>
-    <a href="pagine/Mantova/Index.html">Vai sulla pagina dedicata a Mantova</a>
+
+  <nav id="nav-principale">
+    <ul>
+        <li><a href="#about" class="nav-link">Chi sono</a></li>
+        <li><a href="#competenze" class="nav-link">Competenze</a></li>
+        <li><a href="#progetti" class="nav-link">Progetti</a></li>
+        <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+    </ul>
   </nav>
+  <header class="hero">
+    <h1>Thomas Odierna</h1>
+    <p class="hero-intro">
+        Sviluppatore web in formazione. Sto imparando HTML, CSS e JavaScript
+        costruendo questo portfolio passo dopo passo.
+    </p>
+    <a href="#progetti" class="btn">Guarda i miei progetti</a>
+  </header>
+  <section id="about" class="sezione">
+    <h2>Chi sono</h2>
+    <p>Sono uno studente di informatica al momento nel 4° anno.</p>
+  </section>
+
+  <section id="competenze" class="sezione">
+    <h2>Competenze</h2>
+    <ul class="lista-competenze">
+        <li><strong>HTML</strong> — struttura semantica e accessibilità</li>
+        <li><strong>CSS</strong> — cascade, box model, selettori</li>
+        <li><strong>JavaScript</strong> — basi in corso di apprendimento</li>
+        <li><strong>Git</strong> — versionamento e GitHub</li>
+        <li><strong>VS Code</strong> — editor e estensioni</li>
+    </ul>
+  </section>
+
+  <section id="progetti" class="sezione">
+    <h2>Progetti</h2>
+    <div class="card">
+        <h3>Homepage del portfolio</h3>
+        <p>Struttura HTML semantica e stili CSS di base.</p>
+        <a href="#" class="btn-small">Vedi dettagli</a>
+    </div>
+    <div class="card">
+        <h3>Mondo degli Animali</h3>
+        <p>Una pagina dedicata agli animali.</p>
+        <a href="pagine/Animali/Animali.html" class="btn-small">Vedi dettagli</a>
+    </div>
+    <div class="card">
+        <h3>Orario scolastico</h3>
+        <p>Una pagina dedicata al mio orario scolastico.</p>
+        <a href="pagine/Orario/orario.html" class="btn-small">Vedi dettagli</a>
+    </div>
+     <div class="card">
+        <h3>Mantova</h3>
+        <p>Una pagina dedicata alla città di Mantova.</p>
+        <a href="pagine/Mantova/Index.html" class="btn-small">Vedi dettagli</a>
+    </div>
+  </section>
+
+  <footer class="footer-principale">
+    <p>&copy; 2026 Thomas Odierna — Portfolio in costruzione</p>
+    <ul>
+        <li><a href="https://github.com/tommylpingu" class="footer-link">GitHub</a></li>
+        <li><a href="#" class="footer-link">LinkedIn</a></li>
+    </ul>
+  </footer>
+
 </body>
 </html>
 
