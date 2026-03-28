@@ -3,80 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio di Thomas Odierna</title>
+  <title>Thomas Odierna | Portfolio</title>
   <link rel="stylesheet" href="StileIndex.css">
 </head>
 <body>
 
   <nav id="nav-principale">
-    <ul>
-        <li><a href="#about" class="nav-link">Chi sono</a></li>
-        <li><a href="#competenze" class="nav-link">Competenze</a></li>
-        <li><a href="#progetti" class="nav-link">Progetti</a></li>
-        <li><a href="contatti.html" class="nav-link">Contatti</a></li>
-    </ul>
+    <div class="nav-container">
+        <div class="logo-thomas">Thomas Odierna</div>
+        <ul>
+            <li><a href="#about" class="nav-link">Chi sono</a></li>
+            <li><a href="#competenze" class="nav-link">Competenze</a></li>
+            <li><a href="#progetti" class="nav-link">Progetti</a></li>
+        </ul>
+    </div>
   </nav>
+
   <header class="hero">
     <h1>Thomas Odierna</h1>
     <p class="hero-intro">
-        Sviluppatore web in formazione. Sto imparando HTML, CSS e JavaScript
-        costruendo questo portfolio passo dopo passo.
+      Ciao, sono Thomas Odierna uno studente di informatica al 4° anno nell'istituto jean monnet di Mariano Comense e in questo portfoglio raccolgo i miei compiti scolastici di informatica teoria e laboratorio.
     </p>
-    <a href="#progetti" class="btn">Guarda i miei progetti</a>
+    <a href="#progetti" class="btn-viola">Guarda i miei lavori</a>
   </header>
-  <section id="about" class="sezione">
-    <h2>Chi sono</h2>
-    <p>Sono uno studente di informatica al momento nel 4° anno.</p>
-  </section>
 
-  <section id="competenze" class="sezione">
-    <h2>Competenze</h2>
-    <ul class="lista-competenze">
-        <li><strong>HTML</strong> — struttura semantica e accessibilità</li>
-        <li><strong>CSS</strong> — cascade, box model, selettori</li>
-        <li><strong>JavaScript</strong> — basi in corso di apprendimento</li>
-        <li><strong>Git</strong> — versionamento e GitHub</li>
-        <li><strong>VS Code</strong> — editor e estensioni</li>
-    </ul>
-  </section>
+  <div class="contenitore-centrale">
+      
+      <section id="about" class="sezione">
+        <h2>Chi sono</h2>
+        <p>Studente di informatica al 4° anno. Sto costruendo questo portfolio per raccogliere tutti i miei esercizi e progetti scolastici.</p>
+      </section>
+    
+      <section id="competenze" class="sezione">
+        <h2>Competenze</h2>
+        <div class="lista-tag">
+            <div class="tag">HTML</div>
+            <div class="tag">CSS</div>
+            <div class="tag">Java</div>
+            <div class="tag">C++</div>
+            <div class="tag">C#</div>
+            <div class="tag">Python</div>
+            <div class="tag">Flowgoritme</div>      
+        </div>
+      </section>
+    
+      <section id="progetti" class="sezione">
+        <h2>I miei Progetti</h2>
+        <div class="griglia-progetti">
+            
+            <div class="scheda-progetto">
+                <h3>Mondo degli Animali</h3>
+                <p>Una pagina dedicata alla scoperta degli animali.</p>
+                <a href="pagine/Animali/Animali.html" class="link-progetto">Apri Progetto</a>
+            </div>
 
-  <section id="progetti" class="sezione">
-    <h2>Progetti</h2>
-    <div class="card">
-        <h3>Homepage del portfolio</h3>
-        <p>Struttura HTML semantica e stili CSS di base.</p>
-        <a href="#" class="btn-small">Vedi dettagli</a>
-    </div>
-    <div class="card">
-        <h3>Mondo degli Animali</h3>
-        <p>Una pagina dedicata agli animali.</p>
-        <a href="pagine/Animali/Animali.html" class="btn-small">Vedi dettagli</a>
-    </div>
-    <div class="card">
-        <h3>Orario scolastico</h3>
-        <p>Una pagina dedicata al mio orario scolastico.</p>
-        <a href="pagine/Orario/orario.html" class="btn-small">Vedi dettagli</a>
-    </div>
-     <div class="card">
-        <h3>Mantova</h3>
-        <p>Una pagina dedicata alla città di Mantova.</p>
-        <a href="pagine/Mantova/Index.html" class="btn-small">Vedi dettagli</a>
-    </div>
-    <div class="card">
-      <h3>Tavola Pitagorica</h3>
-      <p>Una pagina dedicata alla Tavola Pitagorica dove i numeri dispari sono evidenziati in rosso.</p>
-      <a href="pagine/TavolaPitagorica/TavolaPitagorica.html" class="btn-small">Vedi dettagli</a>
+            <div class="scheda-progetto">
+                <h3>Orario scolastico</h3>
+                <p>Tabella creata in HTML per gestire le mie materie.</p>
+                <a href="pagine/Orario/orario.html" class="link-progetto">Apri Progetto</a>
+            </div>
+
+            <div class="scheda-progetto">
+                <h3>Mantova</h3>
+                <p>Sito vetrina sulla città di Mantova.</p>
+                <a href="pagine/Mantova/Index.html" class="link-progetto">Apri Progetto</a>
+            </div>
+
+            <div class="scheda-progetto">
+                <h3>Tavola Pitagorica</h3>
+                <p>Esercizio di logica con numeri evidenziati.</p>
+                <a href="pagine/TavolaPitagorica/TavolaPitagorica.html" class="link-progetto">Apri Progetto</a>
+            </div>
+
+        </div>
+      </section>
+
   </div>
-  </section>
 
-  <footer class="footer-principale">
-    <p>&copy; 2026 Thomas Odierna — Portfolio in costruzione</p>
-    <ul>
-        <li><a href="https://github.com/tommylpingu" class="footer-link">GitHub</a></li>
-        <li><a href="#" class="footer-link">LinkedIn</a></li>
-    </ul>
+  <footer class="footer-nero">
+    <p>&copy; 2026 Thomas Odierna</p>
+    <a href="https://github.com/tommylpingu" class="nav-link">GitHub</a>
   </footer>
 
 </body>
 </html>
-
