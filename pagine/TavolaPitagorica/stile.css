@@ -2,9 +2,15 @@
     background-color: red;
 }
 td{
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 2px;
 
 }
 table{
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+    color: #8a2be2;
 }
