@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Ordine</title>
+    <link rel="stylesheet" href="https://tommylpingu.github.io/StileIndex.css">
+</head>
+<body>
+    <nav id="nav-principale">
+        <div class="nav-container">
+            <div class="logo-thomas">Thomas Odierna</div>
+            <ul>
+                <li><a href="/index.html#about" class="nav-link">Chi sono</a></li>
+                <li><a href="/index.html#competenze" class="nav-link">Competenze</a></li>
+                <li><a href="/index.html#progetti" class="nav-link">Progetti</a></li>
+            </ul>
+        </div>
+      </nav>
+    <h2>Esercizio Invio Di Un Ordine</h2>
+    <table border="3px" solid>
+        <thead>
+         <tr>
+            <th>Q.ta</th>
+            <th>Descrizione</th>
+            <th>Costo Unitario</th>
+            <th>Totale</th>
+         </tr>
+        </thead> 
+         <tr>
+            <td><input type="number" id="Q1" value="0"></td>
+            <td>mouse</td>
+            <td>16$</td>
+            <td id="tot1">0</td>
+         </tr>
+         <tr>
+            <td><input type="number" id="Q2" value="0"></td>
+            <td>tastiera 105 tasti</td>
+            <td>25$</td>
+            <td id="tot2">0</td>
+         </tr>
+         <tr>
+            <td><input type="number" id="Q3" value="0"></td>
+            <td>stampante deskjet colori</td>
+            <td>350$</td>
+            <td id="tot3">0</td>
+         </tr>
+         <tr>
+            <td><input type="number" id="Q4" value="0"></td>
+            <td>scanner A4 colori</td>
+            <td>200$</td>
+            <td id="tot4">0</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td><button onclick="Totale()">TOTALE ORDINI -></button></td>
+            <td id="totFin">0</td>
+         </tr>
+    </table>
+    <br>
+    <label>Desidero ricevere notifiche </label>
+    <input type="radio" id="radio1"><label>Si</label>
+    <input type="radio" id="radio2"><label>No</label>
+    <br>
+    <label>E-mail: </label>
+    <input type="email" id="txtEmail">
+    <br>
+    <label>Pagamento: </label>
+    <select id="combo1"></select>
+    <br>
+    <button onclick="inviaOrdine()" id="buttonFinale">INVIA ORDINE</button>
+
+    <footer class="footer-nero">
+        <p>&copy; 2026 Thomas Odierna</p>
+        <a href="https://github.com/tommylpingu" class="nav-link">GitHub</a>
+      </footer>
+    
+      <script src="script.js"></script>
+</body>
+</html>
