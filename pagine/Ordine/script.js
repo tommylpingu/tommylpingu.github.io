@@ -20,13 +20,47 @@ function Totale()
 
 function inviaOrdine()
 {
-    
+    setCookie("metodoPagamento",document.getElementById("combo1").value,1);
+    setCookie("totale",document.getElementById("totFin").innerHTML,1);
+    setCookie("email",document.getElementById("txtEmail").value,1);
+    if(document.getElementById("radio1").checked)
+    {
+        setCookie("notifiche","Si",1);
+    }
+    else
+    {
+        setCookie("notifiche","No",1);
+    }
+    window.location.href = "riepilogo.html";
 }
 
+function Riepilogo()
+{
+    let tot = getCookie("totale");
+    let metodoPagamento = getCookie("metodoPagamento");
+    let email = getCookie("email");
+    let notifiche = getCookie("notifiche");
+    let s = "";
+    s += "Buongiorno il suo ordine di: "+ tot + "$ <br> pagato con : "+ metodoPagamento ;
+    s+= "<br> è stato inviato all'email: " + email + "<br> riceverà notifiche: " + notifiche;
+    document.getElementById("ciao2").innerHTML = s;
+}
+function setCookie(nome, valore, giorni){
+    let data = new Date();
+    data.setTime(data.getTime() + (giorni * 24 * 60 * 60 * 1000));
+    document.cookie = nome + "=" + encodeURIComponent(valore) + ";expires=" + data.toUTCString() + ";path=/";
+}
 
-
-
-
+function getCookie(nome){
+    let cookies = document.cookie.split(";");
+    for (let i = 0; i < cookies.length; i++){
+        let c = cookies[i].trim();
+        if(c.startsWith(nome+"=")){
+            return decodeURIComponent(c.substring(nome.length+1))
+        }
+    }
+    return "";
+}
 
 
 
