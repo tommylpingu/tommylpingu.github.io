@@ -21,7 +21,7 @@ function Totale()
 function inviaOrdine()
 {
     setCookie("metodoPagamento",document.getElementById("combo1").value,1);
-    setCookie("totale",document.getElementById("totFin").innerHTML,1);
+    setCookie("totale",document.getElementById("totFin").textContent,1);
     setCookie("email",document.getElementById("txtEmail").value,1);
     if(document.getElementById("radio1").checked)
     {
