@@ -6,6 +6,8 @@ body {
     background-color: #000000; 
     color: #ffffff;  
     line-height: 1.6;
+    min-height: 100vh;
+    flex: 1;
 }
 
 .contenitore-centrale {
@@ -142,3 +144,4 @@ h2 {
     width: 100%;
    
 }
+ 
