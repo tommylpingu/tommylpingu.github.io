@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    background-color: #8a2be2; 
+    background-color: #c0c0c0; 
     color: white;
     padding: 40px 20px; 
 }
@@ -46,7 +46,7 @@ ul, ol {
 }
 
 .btn {
-    background-color: #8a2be2;
+    background-color: #c0c0c0;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -60,7 +60,7 @@ ul, ol {
 }
 
 .footer {
-    background-color: #8a2be2; 
+    background-color: #c0c0c0; 
     color: white;
     padding: 20px;
     margin-top: 40px;
